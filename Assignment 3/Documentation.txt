@@ -1,0 +1,50 @@
+#BY: TANUSHRI SINGH
+#NETID: TTS150030
+#CS 6375.001 - MACHINE LEARNING
+#ASSIGNMENT 3
+#INSTRUCTOR - ANJUM CHIDA
+
+- Make sure you are in the directory libsvm-3.23\windows Before running these commands!
+
+- Train the 4 kernels with the following command:-
+.\svm-train.exe -t 0 .\training.new TRAININGMODEL\kernel0
+	Output: 
+	optimization finished, #iter = 579
+	nu = 0.017662
+	obj = -0.627017, rho = 1.172955
+	nSV = 40, nBSV = 0
+	Total nSV = 40
+.\svm-train.exe -t 1 .\training.new TRAININGMODEL\kernel1
+	Output: 
+	optimization finished, #iter = 162
+	nu = 0.022567
+	obj = -0.801149, rho = 0.404372
+	nSV = 57, nBSV = 0
+	Total nSV = 57
+.\svm-train.exe -t 2 .\training.new TRAININGMODEL\kernel2
+	Output: 
+	optimization finished, #iter = 99
+	nu = 0.801753
+	obj = -30.091940 rho = -0.076980
+	nSV = 71, nBSV = 22
+	Total nSV = 71
+.\svm-train.exe -t 3 .\training.new TRAININGMODEL\kernel3	Output: 
+	optimization finished, #iter = 37
+	nu = 0.957746
+	obj = -65.367107, rho = -0.492870
+	nSV = 68, nBSV = 68
+	Total nSV = 68
+
+- Test the 4 kernel with the following commands:-
+.\svm-predict.exe .\validation.new C:\Users\tts150030\Desktop\libsvm-3.23\windows\TRAININGMODEL\kernel0 \Users\tts150030\Desktop\libsvm-3.23\windows\OUTPUT\output0
+	Output:
+	Accuracy = 85.7143% (30/35) (classification)
+.\svm-predict.exe .\validation.new C:\Users\tts150030\Desktop\libsvm-3.23\windows\TRAININGMODEL\kernel1 \Users\tts150030\Desktop\libsvm-3.23\windows\OUTPUT\output1
+	Output:
+	Accuracy = 74.2857% (26/35) (classification)
+.\svm-predict.exe .\validation.new C:\Users\tts150030\Desktop\libsvm-3.23\windows\TRAININGMODEL\kernel2 \Users\tts150030\Desktop\libsvm-3.23\windows\OUTPUT\output2
+	Output:
+	Accuracy = 77.1429% (27/35) (classification)
+.\svm-predict.exe .\validation.new C:\Users\tts150030\Desktop\libsvm-3.23\windows\TRAININGMODEL\kernel3 \Users\tts150030\Desktop\libsvm-3.23\windows\OUTPUT\output3
+	Output:
+	Accuracy = 45.7143% (16/35) (classification)
