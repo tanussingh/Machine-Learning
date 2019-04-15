@@ -4,6 +4,7 @@
 #ASSIGNMENT 3
 #INSTRUCTOR - ANJUM CHIDA
 
+- Used a Window's Operating System to finish this project
 - Make sure you are in the directory libsvm-3.23\windows Before running these commands!
 
 - Train the 4 kernels with the following command:-
@@ -48,3 +49,5 @@
 .\svm-predict.exe .\validation.new C:\Users\tts150030\Desktop\libsvm-3.23\windows\TRAININGMODEL\kernel3 \Users\tts150030\Desktop\libsvm-3.23\windows\OUTPUT\output3
 	Output:
 	Accuracy = 45.7143% (16/35) (classification)
+
+- Based on the output it seems as though kernel performance varies for each individual problem. So the only way to predict which kernel would work best is by trying it. Based on the performance it seems as though linear kernel works best. The order of performance from best to worst would be in the following order: Linear, Gaussian, Polynomial then Sigmoid. This particular problem seems to be dealing with a linear kernel.
